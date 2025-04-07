@@ -82,21 +82,57 @@
         </div>
         <div class="card">
             <div class="card_title">
-
+                Калькулятор
             </div>
             <div class="card_content">
                 <div class="my_code">
                     <pre>
-
+                            function calc() {
+                                let action = prompt('Выбери действие: сложение, 
+                                вычитание, умножение, деление, остаток, степень.', '');
+                                let valueFirst = (prompt('Введи первое число', ''));
+                                if (valueFirst == '') {
+                                    return ('Error');
+                                }
+                                let a = Number(valueFirst);
+                                let valueSecond = (prompt("Введи второе число", ''));
+                                if (valueSecond == '') {
+                                    return ('Error');
+                                }
+                                let b = Number(valueSecond);
+                                if (isNaN(a)) {
+                                    return ("Error");
+                                }
+                                if (isNaN(b)) {
+                                    return ("Error");
+                                }
+                                if (action == "сложение") {
+                                    return a + b;
+                                } else if (action == "вычитание") {
+                                    return a - b;
+                                } else if (action == "умножение") {
+                                    return a * b;
+                                } else if (action == "деление") {
+                                    return a / b;
+                                } else if (action == "остаток") {
+                                    return a % b;
+                                } else if (action == "степень") {
+                                    return a ** b;
+                                } else {
+                                    return ("unknown operator");
+                                }
+                            }
+                            let result = calc();
+                            alert(result);
                     </pre>
                 </div>
                 <div class="about">
-
+                    Простенький калькулятор, ввод данных через prompt, может определять ввод пустой строки и нечисловых символов
                 </div>
                 <div class="start_button">
-                    <link rel="stylesheet" href="">
+                    <button onclick="location.href='calc.html'">Code start</button>
                 </div>
-                
+
             </div>
         </div>
 
