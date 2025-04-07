@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'PoiretOne';
+    src: local('PoiretOneRegular'),
+      url(../fonts/PoiretOneRegular/PoiretOne-Regular.ttf);
+  }
+body {
+    background-color: black;
+    margin: 10px;
+}
+header {
+    margin: 10px;
+}
+main {
+    margin: 10px;
+}
+.hello {
+    background-color: gray;
+    
+    border-radius: 20px;
+    font-family: 'PoiretOne';
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.card {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: gray;
+    border-radius: 20px;
+}
+.card_title{
+    text-align: center;
+}
+.card_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+.my_code {
+    padding: 20px;
+    border-radius: 20px;
+}
+.about {
+    padding: 20px;
+}

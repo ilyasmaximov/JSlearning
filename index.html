@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="hello"> Страничка с моими результатами изучения Java Script </div>
+    </header>
+    <main>
+        <div class="card">
+            <div class="card_title">
+                Hello World!
+            </div>
+            <div class="card_content">
+                <div class="my_code">
+                    <pre>
+                        alert( 'Привет, мир!' );
+                    </pre>
+                </div>
+                <div class="about">
+                    Just Hello World!
+                </div>
+                <div class="start_button">
+                    <button onclick="myFunction1()">Code start</button>
+                </div>
+                <script>
+                    function myFunction1() {
+                        alert('Привет, мир!');
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_title">
+                Условное ветвление
+            </div>
+            <div class="card_content">
+                <div class="my_code">
+                    <pre>
+                        let value = prompt("Введи число!", "");
+                        if (value > 0){
+                            alert("Больше нуля")
+                        } else if (value < 0) {
+                            alert("Меньше нуля")
+                        } else if (value == 0){
+                            alert("Нуль")
+                        } else {
+                            alert("ЧИСЛО!!!!!!!!")
+                        }
+                    </pre>
+                </div>
+                <div class="about">
+                    Вводим значение, получаем больше оно нуля или меньше
+                </div>
+                <div class="start_button">
+                    <button onclick="myFunction2()">Code start</button>
+                </div>
+                <script>
+                    function myFunction2() {
+                        let value = prompt("Введи число!", "");
+                        if (value > 0) {
+                            alert("Больше нуля")
+                        } else if (value < 0) {
+                            alert("Меньше нуля")
+                        } else if (value == 0) {
+                            alert("Нуль")
+                        } else {
+                            alert("ЧИСЛО!!!!!!!!")
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_title">
+
+            </div>
+            <div class="card_content">
+                <div class="my_code">
+                    <pre>
+
+                    </pre>
+                </div>
+                <div class="about">
+
+                </div>
+                <div class="start_button">
+                    <button onclick="calc();">Code start</button>
+                </div>
+                <script>
+                    function calc() {
+                        let action = prompt('Выбери действие: сложение, вычитание, умножение, деление, остаток, степень.', '');
+                        let a = Number(prompt('Введи первое число', ''));
+                        let b = Number(prompt("Введи второе число", ''));
+                        if (a == NaN) {
+                            
+                        } 
+                        if (action == "сложение") {
+                            alert(a + b) ;
+                        } else if (action == "вычитание") {
+                            alert(a - b) ;
+                        } else if (action == "умножение") {
+                            alert(a * b) ;
+                        } else if (action == "деление") {
+                            alert(a / b) ;
+                        } else if (action == "остаток") {
+                            alert(a % b) ;
+                        } else if (action == "степень") {
+                            alert(a ** b) ;
+                        } else {
+                            alert ("unknown operator");
+                        }
+                    }
+
+
+
+
+                </script>
+            </div>
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>
